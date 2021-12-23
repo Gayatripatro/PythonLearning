@@ -1,0 +1,3 @@
+# Declaring a Class in Python
+class ClassName:
+    pass
