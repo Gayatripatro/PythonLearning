@@ -1,0 +1,19 @@
+class Student:
+    def __init__(self,name,phy,chem,bio):
+        self.name = name
+        self.phy = phy
+        self.chem =  chem
+        self.bio = bio
+
+    def totalObtained(self):
+        #total = self.phy + self.chem + self.bio
+        #return total
+		return self.phy + self.chem + self.bio
+
+    def percentage(self):
+        #per = (self.totalObtained() / 300) * 100
+        #return per
+		return (self.totalObtained() / 300) * 100
+
+obj1 = Student("Gayatri", 80, 70, 30)
+print(obj1.percentage())
