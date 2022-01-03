@@ -1,0 +1,21 @@
+class Student:
+	__name = None
+	__roleNumber =  None
+	
+	def setName(self, name):
+	    self.__name = name
+	    
+	def getName(self):
+	    return self.__name
+	    
+	def setRollNumber(self, rollNumber):
+	    self.__roleNumber = rollNumber
+	    
+	def getRollNumber(self):
+	    return self.__roleNumber
+		
+stud1 = Student()
+stud1.setName("Gudul")
+print("Name:", stud1.getName())
+stud1.setRollNumber("1234")
+print("Roll Number:", stud1.getRollNumber())
