@@ -31,6 +31,16 @@ print("minimum value of the list is", min)
 * Write a Python function to calculate the sum and average of elements in a list.
 ```#calculate the sum and average of elements in a list
 #With Function
+def calculate_sum_avg(list):
+    sum = 0
+    avg = 0
+    for i in list:
+        sum = sum + i
+        avg = sum / len(list)
+    return sum,avg
+    #return sum is (sum), avg is (avg)
+list = [100,910,20,30,40,500]
+print(calculate_sum_avg(list))
 
 #Without Function
 list = [100,910,20,30,40,500]
