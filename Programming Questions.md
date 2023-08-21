@@ -87,6 +87,23 @@ for ele in list:
 print(new_square_list)```
 
 * Write a Python function to reverse a given list.
+```#reverse a given list
+list = [10,40,2,30,10,90]
+reversed_list = []
+for elements in list:
+    reversed_list.insert(0,elements)
+print(reversed_list)
+
+left = 0
+right = len(list) - 1
+while (left < right):
+    # Swap
+    temp = list[left]
+    list[left] = list[right]
+    list[right] = temp
+    left += 1
+    right -= 1
+print(list)```
 * Write a Python function to count the occurrences of a specific element in a list.
 * Write a Python function to merge two sorted lists into a single sorted list.
 * Write a Python function to rotate a given list to the left by a specified number of positions.
