@@ -109,3 +109,49 @@ print(list)```
 * Write a Python function to rotate a given list to the left by a specified number of positions.
 * Write a Python function to find the missing number in a list containing consecutive numbers from 1 to n.
 * Write a Python function to remove all negative numbers from a list.
+
+## String Programming Questions
+1. Anagram Check:
+Write a function to determine if two strings are anagrams of each other. Anagrams are strings that have the same characters, but in a different order.
+
+2. Longest Palindromic Substring:
+Write a function to find the longest palindromic substring in a given string.
+
+3. String Compression:
+Write a function that performs basic string compression using the counts of repeated characters. For example, the string "aabcccccaaa" would become "a2b1c5a3". If the compressed string is not shorter than the original, return the original.
+
+4. Regular Expression Matching:
+Implement a function that checks if a given string matches a given regular expression.
+
+5. Reverse Words in a String:
+Write a function to reverse the order of words in a given string, while keeping the words themselves unchanged.
+
+6. String Rotation:
+Write a function that determines whether one string is a rotation of another. For example, "waterbottle" is a rotation of "erbottlewat".
+
+7. First Non-Repeated Character:
+Write a function to find and return the first non-repeated character in a string.
+
+8. Minimum Window Substring:
+Given two strings, S and T, find the minimum window in S which will contain all the characters in T.
+
+9. Implement strStr():
+Write a function that finds the index of the first occurrence of a substring in a given string. If the substring is not found, return -1.
+
+10. Valid Palindrome:
+Write a function that determines whether a given string is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+11. Group Anagrams:
+Given an array of strings, group anagrams together. Two strings are anagrams if they contain the same characters but in a different order.
+
+12. RLE Iterator:
+Implement a run-length encoded string iterator. Given a run-length encoded string, implement an iterator that iterates through the original string.
+
+13. Longest Common Subsequence:
+Write a function that finds the length of the longest common subsequence between two strings.
+
+14. Count and Say Sequence:
+Implement the "count and say" sequence. Given an integer n, generate the nth sequence.
+
+15. Valid Parenthesis String:
+Write a function that determines whether a given string containing only '(', ')', and '*' characters is a valid parenthesis string.
