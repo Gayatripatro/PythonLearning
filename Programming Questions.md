@@ -78,6 +78,14 @@ print("After removing Duplicate element from the original list is:",unique_list)
 
 
 * Write a Python function to create a new list containing the squares of elements from the given list.
+```#create a new list containing the squares of elements from the given list.
+list = [4,10,20,60,2]
+new_square_list = []
+for ele in list:
+    ele = ele * ele
+    new_square_list.append(ele)
+print(new_square_list)```
+
 * Write a Python function to reverse a given list.
 * Write a Python function to count the occurrences of a specific element in a list.
 * Write a Python function to merge two sorted lists into a single sorted list.
