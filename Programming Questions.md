@@ -1,7 +1,7 @@
 ## List Programming Questions
 * Write a Python function to find the maximum and minimum values in a given list.
-```#find the maximum and minimum values in a given list
-#With Function
+``` # find the maximum and minimum values in a given list
+# With Function
 def find_max_min(list):
     max = list[0]
     min = list[0]
@@ -15,7 +15,7 @@ lists = [10,30,800,8,90]
 print(find_max_min(lists))
 
 
-#Without Function
+# Without Function
 list = [10,30,800,8,90]
 max = list[0]
 min = list[0]
@@ -29,8 +29,8 @@ for num in list:
 print("minimum value of the list is", min)
 ```
 * Write a Python function to calculate the sum and average of elements in a list.
-```#calculate the sum and average of elements in a list
-#With Function
+```# calculate the sum and average of elements in a list
+# With Function
 def calculate_sum_avg(list):
     sum = 0
     avg = 0
@@ -42,7 +42,7 @@ def calculate_sum_avg(list):
 list = [100,910,20,30,40,500]
 print(calculate_sum_avg(list))
 
-#Without Function
+# Without Function
 list = [100,910,20,30,40,500]
 sum = 0
 avg = 0
@@ -53,8 +53,8 @@ print(sum)
 print(avg)
 ```
 * Write a Python function to remove duplicate elements from a list while preserving the original order.
-```#remove duplicate elements from a list while preserving the original order
-#With Function
+``` # remove duplicate elements from a list while preserving the original order
+# With Function
 def remove_duplicate_ele(list):
     unique_list = []
     for element in list:
@@ -66,7 +66,7 @@ list = [10, 30, 1, 10, 50, 80, 1]
 print("Original list is: ", list)
 print("After removing Duplicate element from the original list is:", remove_duplicate_ele(list))
 
-#Without Function
+# Without Function
 list = [10,30,1,10,50,80,1]
 unique_list = []
 for element in list:
@@ -74,20 +74,21 @@ for element in list:
         unique_list.append(element)
 print("Original list is: ", list)
 print("After removing Duplicate element from the original list is:",unique_list)
-```
+ ```
 
 
 * Write a Python function to create a new list containing the squares of elements from the given list.
-```#create a new list containing the squares of elements from the given list.
+``` # create a new list containing the squares of elements from the given list.
 list = [4,10,20,60,2]
 new_square_list = []
 for ele in list:
     ele = ele * ele
     new_square_list.append(ele)
-print(new_square_list)```
+print(new_square_list)
+```
 
 * Write a Python function to reverse a given list.
-```#reverse a given list
+``` # reverse a given list
 list = [10,40,2,30,10,90]
 reversed_list = []
 for elements in list:
@@ -103,7 +104,24 @@ while (left < right):
     list[right] = temp
     left += 1
     right -= 1
-print(list)```
+print(list)
+```
+
+* prime number for a given number
+``` list1=[]
+for num in range(1,100):
+    if num>1:
+        for i in range(2,num):
+            if num%i ==0:
+                break
+        else:
+            list1.append(num)
+print(list1)
+
+# using list comp 
+Prime_num = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, num))]
+print(Prime_num)
+```
 * Write a Python function to count the occurrences of a specific element in a list.
 * Write a Python function to merge two sorted lists into a single sorted list.
 * Write a Python function to rotate a given list to the left by a specified number of positions.
