@@ -107,7 +107,7 @@ while (left < right):
 print(list)
 ```
 
-* prime number for a given number [https://www.onlinegdb.com/online_python_compiler]
+* prime number for a given number
 ``` list1=[]
 for num in range(1,100):
     if num>1:
