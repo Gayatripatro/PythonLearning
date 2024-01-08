@@ -107,7 +107,7 @@ while (left < right):
 print(list)
 ```
 
-* prime number for a given number
+* prime number for a given number [https://www.onlinegdb.com/online_python_compiler]
 ``` list1=[]
 for num in range(1,100):
     if num>1:
@@ -122,6 +122,7 @@ print(list1)
 Prime_num = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, num))]
 print(Prime_num)
 ```
+* Palindrome Palooza: [Create a list of all 3-digit palindromic numbers using list comprehension. (e.g., 121, 133, 292)]
 * Write a Python function to count the occurrences of a specific element in a list.
 * Write a Python function to merge two sorted lists into a single sorted list.
 * Write a Python function to rotate a given list to the left by a specified number of positions.
