@@ -1,0 +1,14 @@
+* Convert string to list and change value index-wise
+`user_input = input("Enter a string: ")
+new_list=[]
+for each_ch in user_input:
+    new_list.append(each_ch)
+print(new_list)
+for index_of_list in range(0,len(new_list)):
+    if index_of_list % 2 == 0:
+        new_list[index_of_list] = "@"
+    elif index_of_list % 2 != 0:
+        new_list[index_of_list] = "!"
+    elif index_of_list % 3 == 0:
+        new_list[index_of_list] = "_"
+print(new_list)`
