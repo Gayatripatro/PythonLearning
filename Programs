@@ -12,3 +12,22 @@ for index_of_list in range(0,len(new_list)):
     elif index_of_list % 3 == 0:
         new_list[index_of_list] = "_"
 print(new_list)`
+
+
+* Reverse a sentence
+'''def reverse(word):
+    reverse_word = ""
+    for each_char in word:
+        reverse_word = each_char + reverse_word
+    print("within function",reverse_word)
+    return reverse_word
+    
+    
+    
+user_input = "gayatri patro"
+words = user_input.split(" ")
+output_data =""
+print(words)
+for word in words:
+    output_data = output_data+" "+reverse(word)
+print(output_data)'''
