@@ -21,9 +21,7 @@ print(new_list)`
         reverse_word = each_char + reverse_word
     print("within function",reverse_word)
     return reverse_word
-    
-    
-    
+
 user_input = "gayatri patro"
 words = user_input.split(" ")
 output_data =""
