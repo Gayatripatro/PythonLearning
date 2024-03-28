@@ -29,3 +29,67 @@ print(words)
 for word in words:
     output_data = output_data+" "+reverse(word)
 print(output_data)'''
+
+
+#Python Program to Count the Number of Occurrences of a Character in a String
+user_str = "Gayatri"
+occurrence = {}
+for each_char in user_str:
+    if each_char in occurrence:
+        occurance[each_char] += 1
+    else:
+        occurance[each_char] = 1
+print(occurrence)
+
+
+
+#Python Program to Get the Last Element of the List
+list1=["gayu",10,5.9]
+length_of_list = len(list1)
+print(length_of_list)
+last_index_of_list = list1[length_of_list-1]
+print(last_index_of_list)
+
+
+
+
+#Python Program to Find Sum of Natural Numbers
+num = 1235
+sum = 0
+while(num>0):
+    digit = num % 10
+    sum = sum + digit
+    num = num // 10
+print(sum)
+
+
+
+
+# #check a number is palindrome
+user_data = 1212
+userdata = user_data
+reverse_data = 0
+while(user_data>0):
+    digit = user_data % 10
+    reverse_data = (reverse_data * 10) + digit
+    user_data = user_data // 10
+print(reverse_data)
+if userdata == reverse_data:
+    print("the String is palindrum",userdata)
+else:
+    print("the String is not palindrome",userdata)
+
+
+
+
+# #check if a string is palindrome or not
+user_input = "mom"
+reverse_str = ""
+for each_char in user_input:
+    reverse_str = each_char + reverse_str
+print(reverse_str)
+
+if user_input == reverse_str:
+    print("the String is palindrum",user_input)
+else:
+    print("the String is not palindrome",user_input)
