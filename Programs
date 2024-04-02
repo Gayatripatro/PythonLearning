@@ -1,3 +1,64 @@
+
+
+
+
+
+#Implement a function to remove duplicates from a list.
+def remove_duplicate(list1):
+    unique_list = []
+    for each_num in list1:
+        if each_num not in unique_list:
+            unique_list.append(each_num)
+    return unique_list
+
+my_list = list(input("enter a list").split(','))
+list_after_remove_duplicate = remove_duplicate(my_list)
+print("List afetr removed the duplicate numbers:", list_after_remove_duplicate)
+    
+
+
+
+# #Write a Python program to find the largest element in a list.
+list1 = [23,1,33,10,90,29,3]
+max_element = list1[0]  
+for num in list1[1:]:  
+    if num > max_element:  
+        max_element = num
+print("Largerst element of the list is :",max_element)
+
+
+
+
+# #Implement a function to check if a given string is a palindrome.
+def check_string_palindrome(check_palindrome):
+    reverse_str = ""
+    for each_char in check_palindrome:
+        reverse_str = each_char + reverse_str
+    #print(reverse_str)
+    return reverse_str
+
+str1 = input("enter a string to check palindrome: ")
+reverse_of_str = check_string_palindrome(str1)
+print(reverse_of_str)
+if str1 == reverse_of_str:
+    print("The string is palindrome:",str1)
+else:
+    print("The string is not a palindrome:",str1)
+
+
+
+# #Write a Python function to calculate the factorial of a non-negative integer.
+def factorial_of_number(num):
+    factorial_value = 1
+    for num in range(1,num+1):
+        factorial_value = num * factorial_value
+    return factorial_value
+
+num = int(input("enter a number: "))
+factioal_values=factorial_of_number(num)
+print("factorial of the number is:", factioal_values)
+
+
 * Convert string to list and change value index-wise
 `user_input = input("Enter a string: ")
 new_list=[]
