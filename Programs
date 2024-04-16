@@ -1,7 +1,91 @@
 
 
 
+#reverse of words
 
+
+
+
+# #Python Program to Count the Number of Occurrences of a Character in a String
+user_str = "Gayatri"
+occurrence = {}
+for each_char in user_str:
+    if each_char in occurrence:
+        occurrence[each_char] += 1
+    else:
+        occurrence[each_char] = 1
+print("occurrence of each char is:",occurrence)
+
+# Find the character with maximum occurrence
+max_char = None
+max_occurrence = 0
+for char, count in occurrence.items():
+    if count > max_occurrence:
+        max_char = char
+        max_occurrence = count
+
+print("Character with maximum occurrence:", max_char)
+print("Maximum occurrence:", max_occurrence)
+
+
+
+
+
+
+# #factorial of a number
+# def factorial_of_num(num):
+#     factorial_num = 1
+#     for i in range(1,num+1):
+#         factorial_num = i * factorial_num
+#     return factorial_num
+# num = int(input("enter a number: "))
+# factorial_value=factorial_of_num(num)
+# print(factorial_value)
+
+
+
+
+# #Implement a function to check if a given string is a palindrome.
+# def string_palindrome(str1):
+#     reverse_str=""
+#     for each_char in str1:
+#         reverse_str = each_char + reverse_str
+#     return reverse_str
+    
+# str1 = input("eneter a string to check palindrome: ")
+# reverseed_str = string_palindrome(str1)
+# if str1==reverseed_str:
+#     print("String is palindrome",str1)
+# else:
+#     print("String is not palindrome",str1)
+
+
+
+# #largest elements from the list1
+# def largest_num_from_list(list1):
+#     largest_num=list1[0]
+#     for each_element in list1[1:]:
+#         if each_element>largest_num:
+#             largest_num= each_element
+#     print(largest_num)
+    
+# list1 = list(input("Enter a list of elements: ").split(","))
+# largest_num_from_list(list1)
+
+
+
+
+
+# #remove duplicates
+# def remove_dupliacte(list1):
+#     empty_list=[]
+#     for each_element in list1:
+#         if each_element not in empty_list:
+#             empty_list.append(each_element);
+#     print(empty_list)
+    
+# list1 = list(input("Enter a list of elements: ").split(","))
+# remove_dupliacte(list1)
 
 #Implement a function to remove duplicates from a list.
 def remove_duplicate(list1):
