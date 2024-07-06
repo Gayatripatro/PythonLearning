@@ -1,4 +1,21 @@
 ## List Programming Questions
+* occurance of 0 and 1's
+```list1=[1,0,1,1,0,1,1,1]
+occurance_of_0=0
+occurance_of_1=1
+count=0
+for i in range(len(list1)-1):
+    if list1[i] != list1[i+1]:
+        count+=1
+print(count)
+for each_num in list1:
+    if each_num == 0:
+        occurance_of_0 +=1
+    else:
+        occurance_of_1 +=1
+print("occurance_of_0 = ",occurance_of_0,"occurance_of_1=",occurance_of_1)```
+* 
+
 * Write a Python function to find the maximum and minimum values in a given list.
 ``` # find the maximum and minimum values in a given list
 # With Function
