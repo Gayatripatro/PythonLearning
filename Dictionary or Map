@@ -17,7 +17,9 @@
             print("The Strings are Anagram")
         else:
             print("The Strings are not Anagram")
-  def build_char_map(str1):
+'''
+```
+def build_char_map(str1):
     str1_char_map = {}
     for chr1 in str1:
         if chr1 in str1_char_map:
