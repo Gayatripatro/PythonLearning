@@ -1,5 +1,5 @@
 # Map Programs
-** Anagram of a string
+* Anagram of a string
   ```
   def isAnagram(str1, str2):
     if len(str1) != len(str2):
