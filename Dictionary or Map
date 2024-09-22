@@ -1,0 +1,51 @@
+# Map Programs
+** Anagram of a string
+  ```
+  def isAnagram(str1, str2):
+    if len(str1) != len(str2):
+        print("The Strings are not Anagram")
+    else:
+        matched_chr_cout = 0
+        str1 = str1.lower()
+        str2 = str2.lower()
+        for chr1 in str1:
+            for chr2 in str2:
+                if chr1 == chr2:
+                  matched_chr_cout = matched_chr_cout + 1
+        print(matched_chr_cout)
+        if matched_chr_cout == len(str1):
+            print("The Strings are Anagram")
+        else:
+            print("The Strings are not Anagram")
+  def build_char_map(str1):
+    str1_char_map = {}
+    for chr1 in str1:
+        if chr1 in str1_char_map:
+            str1_char_map[chr1] += 1
+             
+        else:
+            str1_char_map[chr1] = 1
+    return str1_char_map
+  def isAnagram(str1, str2):
+    if len(str1) != len(str2):
+        return False
+    else:    
+        str1_char_map = build_char_map(str1)
+        str2_char_map = build_char_map(str2)
+        print(str1_char_map, str2_char_map)
+        for str1_key in str1_char_map:
+            if str1_key in str2_char_map:
+                value1 = str1_char_map[str1_key]
+                value2 = str2_char_map[str1_key]
+                if value1 != value2:
+                    return False
+                else:
+                return False        
+    return True
+str1 = "gayu"
+str2 = "yuga"
+if isAnagram(str1,str2):
+    print("Anagram")
+else:
+    print("not Anagram")
+  ```
