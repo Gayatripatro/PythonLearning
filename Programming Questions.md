@@ -139,6 +139,155 @@ print(list1)
 Prime_num = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, num))]
 print(Prime_num)
 ```
+
+
+# Sort a List Without Using Built-in Functions
+# def sort_list(list1):
+#     sorted_list=[]
+#     for i in range(0,len(list1)):
+#         for j in range(i+1,len(list1)):
+#             if list1[i]>=list1[j]:
+#                 list1[i],list1[j]=list1[j],list1[i]
+#     return list1
+
+# list1=[23,5,67,89,46,5,67]
+# print(sort_list(list1)) 
+
+
+
+# # #Find the Difference Between Two Lists
+# # def difference_between_lists(list1,list2):
+# #     different_item=[]
+# #     for item1 in list1:
+# #         if item1 not in list2:
+# #             different_item.append(item1)
+# #     for item in list2:
+# #         if item not in list1:
+# #             different_item.append(item)
+# #     return different_item
+
+
+# # list1=[23,5,607,89]
+# # list2=[607,78,89,5]
+# # print(difference_between_lists(list1,list2))
+
+
+
+
+# # def rotate_by_position(list1):
+# #     unique_data=set()
+# #     duplicate_data=set()
+# #     for element in list1:
+# #         if element in unique_data:
+# #             duplicate_data.add(element)
+            
+# #         else:
+# #             unique_data.add(element)
+# #     print(duplicate_data)
+# #     return unique_data
+
+# # list1=[23,5,67,89,46,5,67]
+# # print(rotate_by_position(list1))   
+
+
+
+# # #Write a Python function to rotate a list by n positions.
+# # def rotate_by_position(list1,position):
+# #     list1 = (list1[len(list1) - position:len(list1)] + list1[0:len(list1) - position])
+# #     return list1
+
+# # list1=[23,5,67,89]
+# # position = 2
+# # print(rotate_by_position(list1,position))    
+    
+
+
+# # # Flatten a Nested List
+# # def flatten_list(list1):
+# #     list2=[]
+# #     for element in list1:
+# #         if isinstance(element,list):
+# #             list2.extend(element)
+# #         else:
+# #             list2.append(element)
+# #     return list2
+    
+# # list1=[23,5,[12,4],607,89]
+# # print(flatten_list(list1))    
+
+
+
+
+
+# # # Find Common Elements in Two Lists
+# # def common_ele(list1,list2):
+# #     common_list=[]
+# #     for element1 in list1:
+# #         if element1 in list2:
+# #             common_list.append(element1)
+# #     return common_list
+    
+# # list1=[23,5,607,89]
+# # list2=[607,78,89,5]
+# # print(common_ele(list1,list2))
+
+
+
+
+# # # palindrome
+# # user_input = "madam isi madam"
+# # words= user_input.split(" ")
+# # reverse_word = ""
+# # for word in words:
+# #     reverse_word = word[::-1] + reverse_word
+# # print(reverse_word,user_input)
+
+# # if user_input.replace(" ","") == reverse_word.replace(" ",""):
+# #     print("the word is palindrome")
+# # else:
+# #     print("the word is not palindrome")
+
+
+
+
+# # # Remove Duplicates
+# # def remove_duplicates(list1):
+# #     # unique_list = []
+# #     # for elemetnts in list1:
+# #     #     if elemetnts not in unique_list:
+# #     #         unique_list.append(elemetnts)
+# #     # return unique_list
+    
+# #     for elemetnts in list1:
+# #         if list1.count(elemetnts) > 1:
+# #             list1.remove(elemetnts)
+# #     return list1   
+    
+    
+# # list1=[23,5,67,89,46,5,67]
+# # print(remove_duplicates(list1))
+
+
+
+
+# # # Find the Second Largest Element
+# # def second_largest(list1):
+# #     largest = 0
+# #     secondlargest = 0
+# #     for element in list1:
+# #         if element > largest:
+# #             second_largest = largest
+# #             largest = element
+            
+# #     return second_largest
+    
+    
+# # list1=[23,5,67,89,46]
+# # print(second_largest(list1))
+
+
+
+
 * Palindrome Palooza: [Create a list of all 3-digit palindromic numbers using list comprehension. (e.g., 121, 133, 292)]
 * Write a Python function to count the occurrences of a specific element in a list.
 * Write a Python function to merge two sorted lists into a single sorted list.
